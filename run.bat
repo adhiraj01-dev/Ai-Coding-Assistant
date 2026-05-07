@@ -1,0 +1,2 @@
+start cmd /k "cd ai-coding-assistant\backend && ..\venv_new\Scripts\activate && uvicorn app:app --reload --port 8000"
+start cmd /k "cd ai-coding-assistant\frontend && ..\venv_new\Scripts\activate && streamlit run app.py"

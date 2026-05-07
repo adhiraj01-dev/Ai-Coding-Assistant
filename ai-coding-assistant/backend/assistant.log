@@ -1,0 +1,73 @@
+2026-04-28 05:32:36,336 [INFO] services.agent: No intent pattern matched, defaulting to QUERY
+2026-04-28 05:32:36,337 [WARNING] services.agent: RAG retrieval failed (codebase may not be ingested yet): Vector store not found. Please ingest a codebase first via /api/upload_codebase.
+2026-04-28 05:32:36,338 [INFO] services.agent: Agent running with intent=Intent.QUERY
+2026-04-28 05:32:36,343 [INFO] services.llm_service: Sending request to gpt-4o
+2026-04-28 05:32:38,679 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:32:38,680 [INFO] openai._base_client: Retrying request to /chat/completions in 0.484397 seconds
+2026-04-28 05:32:40,709 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:32:40,710 [INFO] openai._base_client: Retrying request to /chat/completions in 0.868748 seconds
+2026-04-28 05:32:44,096 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:32:44,098 [ERROR] services.llm_service: LLM call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:32:44,098 [ERROR] routes.query: Query failed: LLM API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:38:51,755 [INFO] services.agent: Detected intent: Intent.EXPLAIN (score: 1)
+2026-04-28 05:38:51,756 [WARNING] services.agent: RAG retrieval failed (codebase may not be ingested yet): Vector store not found. Please ingest a codebase first via /api/upload_codebase.
+2026-04-28 05:38:51,757 [INFO] services.agent: Agent running with intent=Intent.EXPLAIN
+2026-04-28 05:38:51,757 [INFO] services.llm_service: Sending request to gpt-4o
+2026-04-28 05:38:51,946 [INFO] openai._base_client: Retrying request to /chat/completions in 0.376355 seconds
+2026-04-28 05:38:52,342 [INFO] openai._base_client: Retrying request to /chat/completions in 0.780278 seconds
+2026-04-28 05:38:53,144 [ERROR] services.llm_service: LLM call failed: Connection error.
+2026-04-28 05:38:53,145 [ERROR] routes.query: Query failed: LLM API error: Connection error.
+2026-04-28 05:41:36,040 [INFO] services.agent: Detected intent: Intent.EXPLAIN (score: 1)
+2026-04-28 05:41:36,041 [WARNING] services.agent: RAG retrieval failed (codebase may not be ingested yet): Vector store not found. Please ingest a codebase first via /api/upload_codebase.
+2026-04-28 05:41:36,042 [INFO] services.agent: Agent running with intent=Intent.EXPLAIN
+2026-04-28 05:41:36,042 [INFO] services.llm_service: Sending request to gpt-4o
+2026-04-28 05:41:37,540 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:41:37,543 [INFO] openai._base_client: Retrying request to /chat/completions in 0.386819 seconds
+2026-04-28 05:41:38,239 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:41:38,242 [INFO] openai._base_client: Retrying request to /chat/completions in 0.836245 seconds
+2026-04-28 05:41:39,587 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:41:39,594 [ERROR] services.llm_service: LLM call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:41:39,594 [ERROR] routes.query: Query failed: LLM API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:41:52,330 [WARNING] services.agent: RAG retrieval failed (codebase may not be ingested yet): Vector store not found. Please ingest a codebase first via /api/upload_codebase.
+2026-04-28 05:41:52,331 [INFO] services.agent: Agent running with intent=Intent.GENERATE
+2026-04-28 05:41:52,332 [INFO] services.llm_service: Sending request to gpt-4o
+2026-04-28 05:41:53,820 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:41:53,823 [INFO] openai._base_client: Retrying request to /chat/completions in 0.442734 seconds
+2026-04-28 05:41:54,742 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:41:54,743 [INFO] openai._base_client: Retrying request to /chat/completions in 0.768226 seconds
+2026-04-28 05:41:55,973 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:41:55,976 [ERROR] services.llm_service: LLM call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:41:55,976 [ERROR] routes.generate: Generate route error: LLM API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:42:07,572 [INFO] services.agent: Detected intent: Intent.EXPLAIN (score: 1)
+2026-04-28 05:42:07,573 [WARNING] services.agent: RAG retrieval failed (codebase may not be ingested yet): Vector store not found. Please ingest a codebase first via /api/upload_codebase.
+2026-04-28 05:42:07,573 [INFO] services.agent: Agent running with intent=Intent.EXPLAIN
+2026-04-28 05:42:07,574 [INFO] services.llm_service: Sending request to gpt-4o
+2026-04-28 05:42:08,060 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:42:08,061 [INFO] openai._base_client: Retrying request to /chat/completions in 0.388587 seconds
+2026-04-28 05:42:08,772 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:42:08,774 [INFO] openai._base_client: Retrying request to /chat/completions in 0.783437 seconds
+2026-04-28 05:42:10,512 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:42:10,514 [ERROR] services.llm_service: LLM call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:42:10,514 [ERROR] routes.query: Query failed: LLM API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:43:31,386 [INFO] services.agent: No intent pattern matched, defaulting to QUERY
+2026-04-28 05:43:31,388 [WARNING] services.agent: RAG retrieval failed (codebase may not be ingested yet): Vector store not found. Please ingest a codebase first via /api/upload_codebase.
+2026-04-28 05:43:31,388 [INFO] services.agent: Agent running with intent=Intent.QUERY
+2026-04-28 05:43:31,389 [INFO] services.llm_service: Sending request to gpt-4o
+2026-04-28 05:43:33,052 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:43:33,057 [INFO] openai._base_client: Retrying request to /chat/completions in 0.485658 seconds
+2026-04-28 05:43:33,868 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:43:33,870 [INFO] openai._base_client: Retrying request to /chat/completions in 0.953708 seconds
+2026-04-28 05:43:35,199 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:43:35,202 [ERROR] services.llm_service: LLM call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:43:35,202 [ERROR] routes.query: Query failed: LLM API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:55:18,264 [INFO] services.agent: No intent pattern matched, defaulting to QUERY
+2026-04-28 05:55:18,266 [WARNING] services.agent: RAG retrieval failed (codebase may not be ingested yet): Vector store not found. Please ingest a codebase first via /api/upload_codebase.
+2026-04-28 05:55:18,266 [INFO] services.agent: Agent running with intent=Intent.QUERY
+2026-04-28 05:55:18,267 [INFO] services.llm_service: Sending request to gpt-4o
+2026-04-28 05:55:19,337 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:55:19,339 [INFO] openai._base_client: Retrying request to /chat/completions in 0.386846 seconds
+2026-04-28 05:55:20,018 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:55:20,020 [INFO] openai._base_client: Retrying request to /chat/completions in 0.822024 seconds
+2026-04-28 05:55:21,197 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-28 05:55:21,199 [ERROR] services.llm_service: LLM call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-28 05:55:21,200 [ERROR] routes.query: Query failed: LLM API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
